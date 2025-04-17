@@ -1,4 +1,10 @@
-.dictionary form{
+
+.dictionary input{
     margin: 30px auto;
-    
+    display: block;
+    border: 1px solid #f9f7fe;
+    padding: 8px 10px;
+    border-radius: 4px;
+    width: 30%;
+
 }
