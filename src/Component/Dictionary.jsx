@@ -12,11 +12,12 @@ export default function Dictionary() {
         
     }
      function handleResponse(response) {
-    //  console.log(response.data[0]);
+     console.log(response.data);
      setResults(response.data[0]);
  }
     function handleSubmit(event) {
         event.preventDefault();
+   
 let api=`https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 
         axios.get(api).then(handleResponse);
