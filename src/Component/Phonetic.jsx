@@ -2,7 +2,7 @@
     //  console.log(props.phonetic);
      return(
          <div className="phonetic">
-             <a href={props.phonetic.audio} target="_blank">Audio</a>
+             <a href={props.phonetic.audio}target="_blank" rel="noreferrer">Audio</a>
          <br />
              {props.phonetic.text}
          </div>
