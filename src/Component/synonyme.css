@@ -1,8 +1,9 @@
 .synonyme-section li{
-    display: inline-block;
-    padding-right: 15px;
-    line-height: 1;
-    font-size: 16px;
-    /* font-family: 'Times New Roman', Times, serif; */
+  display: inline-block;
+  background-color: #e1dcf8;
+  margin: 5px 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
 
 }
