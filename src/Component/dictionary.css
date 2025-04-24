@@ -1,10 +1,47 @@
+.dictionary{
+  background-color: #f9f7fe;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+}
 
-.dictionary input{
-    margin: 30px auto;
-    display: block;
-    border: 1px solid #f9f7fe;
-    padding: 8px 10px;
-    border-radius: 4px;
-    width: 30%;
+.search-container {
+  display: flex;
+  /* align-items: center; */
+  /* margin: auto; */
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background-color: #fff;
+}
+.dictionary h2{
+    text-align: center;
+    padding: 5px;
+    font-size: 35px;
+    color: #333;
+  font-family: 'Georgia', serif;
+}
+.dictionary form{
+    padding: 15px;
+} 
+
+.search-container input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  flex-grow: 1;
+  padding: 5px 10px;
+  color: #333;
+  text-transform: capitalize;
+}
+.search-container .fa-solid {
+  font-size: 26px;
+  color: #6a4fc4;
+  margin-left: 10px;
+  cursor: pointer;
+
 
 }

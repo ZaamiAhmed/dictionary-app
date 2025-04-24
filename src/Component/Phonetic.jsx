@@ -1,10 +1,15 @@
+ import './phonetic.css';
  export default function Phonetic(props) {
     //  console.log(props.phonetic);
      return(
          <div className="phonetic">
-             <a href={props.phonetic.audio}target="_blank" rel="noreferrer">Audio</a>
+              <span className="phonetic-text">{props.phonetic.text}</span>
+             <section className="phonetic-container">
+             <a href={props.phonetic.audio} target="_blank" ><i class="fa-solid fa-volume-high"></i></a>
+             </section>
          <br />
-             {props.phonetic.text}
+    
+             
          </div>
      );
  }

@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import axios from "axios";
 import './dictionary.css';
 import Results from "./Results";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Dictionary() {
  let [keyword,setKeword] = useState("");
@@ -25,14 +26,22 @@ let api=`https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         
     }
     return(
-
+     <>
         <div className="dictionary">
+            <h2>English Dictionary</h2>
+           
             <form onSubmit={handleSubmit} >
-                <input type="search" autoFocus={true} onChange={handleChange}/>
+                 <section className="search-container">
+                <input type="search" placeholder="type a word" autoFocus={true}  onChange={handleChange} />
+                <i className="fa-solid fa-magnifying-glass"onClick={handleSubmit} ></i>
+               
+                 </section>
             </form>
-            <Results result= {results}/>
+            {/* <span>i.e book,club,rope.</span> */}
+          
         </div>
-      
+        <Results result= {results}/>
+      </>
     );
      
     

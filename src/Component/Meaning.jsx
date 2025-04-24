@@ -5,24 +5,29 @@ export default function Meaning(props) {
     
     return(
         <div className="meaning">
-            <h3>{props.meanings.partOfSpeech}</h3>
-             
+            <h3 className="part-speech">{props.meanings.partOfSpeech}</h3>
+              
           {props.meanings.definitions.map(function(definition,index) {
               return(
-                  
+                
                   <div key={index}>
-                      <p>
-                      {definition.definition}
-                         </p>
-                      <em>{definition.example}</em>
-                      <br />
+                   <div className="definition">
+                       {definition.definition}
+
+                   </div>
+                      
+                      <div className="example">{definition.example}</div>
+                     
+                      
                       <Synonyms synonyms={definition.synonyms}/>
                     
                   </div>
-                  
+           
               )
-              
+               
           })}
+           
+          <Synonyms synonyms={props.meanings.synonyms}/>
         </div>
     )
     
