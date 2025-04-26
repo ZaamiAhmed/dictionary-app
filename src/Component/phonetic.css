@@ -7,9 +7,13 @@ display: flex;
 
 .phonetic-text{
     opacity: 0.6;
-    font-weight: bold;
+   font-weight: 600;
+    padding: 5px;
+    
+}
+.phonetic-container a{
+    text-decoration: none;
    
-    padding: 0 5px;
 }
 .phonetic .fa-solid{
     color: #333;
