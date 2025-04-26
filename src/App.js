@@ -10,7 +10,7 @@ export default function App() {
       <main>
         <Dictionary defaultkeyword="rain"/>
       </main>
-      <footer className="app-footer"><small>Coded by Maryam Ahmed</small></footer>
+      <footer className="app-footer"><small>Coded by Maryam Ahmed and is <a href="https://github.com/ZaamiAhmed/dictionary-app" target="_blank" rel="noreferrer">open-sourced</a></small></footer>
       </div>
     </div>
   );
