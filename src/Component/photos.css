@@ -1,0 +1,14 @@
+.photos img{
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+
+/* @media (max-width:600px) {
+    .photos img{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+} */

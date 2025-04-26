@@ -5,7 +5,7 @@
          <div className="phonetic">
               <span className="phonetic-text">{props.phonetic.text}</span>
              <section className="phonetic-container">
-             <a href={props.phonetic.audio} target="_blank" rel="noreferrer" ><i class="fa-solid fa-volume-high"></i></a>
+             <a href={props.phonetic.audio} target="_blank" rel="noreferrer" ><i className="fa-solid fa-volume-high"></i></a>
              </section>
          <br />
     
