@@ -4,6 +4,7 @@ export default function Synonyms(props) {
         return <ul>
             <section className="synonyme-section">
             {props.synonyms.map(function (synonym,index) {
+              
                 return(
                   <li key={index}>
                    {synonym}

@@ -1,18 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .meaning{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+   
+  
  
 
 }
+.meaning .definition{
+    /* color: aqua; */
+    /* line-height: 1.2; */
+}
 .part-speech{
     color: #333;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
+    text-transform: capitalize;
+   margin: 0;
+   padding: 10px;
 }
 .meaning .example{
    color: #70757a;
-   font-size: 15px;
+   font-size: 17px;
+   /* background-color: #fff; */
+}
+@media (max-width:600px) {
+    .meaning{
+        font-size: 14px;
+        text-align: center;
+    }
+    
 }

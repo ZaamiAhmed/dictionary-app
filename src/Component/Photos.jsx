@@ -8,7 +8,7 @@ export default function Photos(props){
                   <div className="row">
                
            {props.photos.map(function(photo,index) {
-                 console.log(photo);
+                //  console.log(photo);
                 
                return (
                <div className="col-sm-6 col-md-4" key={index}>
